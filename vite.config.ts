@@ -5,5 +5,8 @@ export default defineConfig({
   plugins: [tsConfigPaths()],
   test: {
     globals: true,
-  }
+  },
+  esbuild: {
+    loader: 'ts', // Adiciona suporte para TypeScript
+  },
 })
