@@ -2,8 +2,17 @@
   "extends": ["@rocketseat/eslint-config/node",
 "plugin:vitest-globals/recommended"],
 "rules": {
+  "@typescript-eslint/ban-types": [
+    "error",
+    {
+      "types": {
+        "{}": false
+      }
+    }
+  ],
   "no-useless-constructor": "off",
-  "@typescript-eslint/no-unused-vars": "off"
+  "@typescript-eslint/no-unused-vars": "off",
+  "@typescript-eslint/no-explicit-any": "off"
 },
   "env": {
     "vitest-globals/env": true
